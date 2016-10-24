@@ -1,0 +1,115 @@
+/* Alert */
+
+.AlertBg {
+	width: 100%;
+	position: absolute;
+	background: black;
+	height: 100%;
+	top: 0;
+	z-index: 999998;
+}
+
+.Alert {
+	position: fixed;
+	_position: absolute;
+	overflow: hidden;
+	border: 1px solid #FFF;
+	width: auto;
+	height: auto;
+	left: 0px;
+	_left: 0px;
+	z-index: 999999;
+	top: 85px;
+	_top: expression(documentElement.scrollTop + 85 + "px");
+	background: url(/img/alert_Bg.png) #FFF repeat-x;
+	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+	min-width: 100px;
+	-webkit-box-shadow: 3px 3px 6px #555;
+	-moz-box-shadow: 3px 3px 6px #555;
+	box-shadow: 3px 3px 6px #555;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.MoveAlert {
+	background: #FFF;
+	position: absolute;
+	z-index: 999999999;
+	-webkit-box-shadow: 3px 3px 6px #555;
+	-moz-box-shadow: 3px 3px 6px #555;
+	box-shadow: 3px 3px 6px #555;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.AlertBg,.Alert {
+	display: none;
+}
+
+.Alert .AlertT {
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.Alert .AlertT span {
+	color: #666;
+}
+
+.Alert .AlertT img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.Alert #AlertC {
+	padding: 20px;
+	font-size: 14px;
+}
+
+#AlertC {
+	overflow: auto;
+}
+
+#AlertC .Btn {
+	display: inline-block;
+	padding: 3px 15px 3px 15px;
+	background: #FFF;
+	border: 1px solid #EEE;
+	text-decoration: none;
+}
+
+#AlertC .Btn:hover {
+	background: #F60;
+	color: #FFC;
+}
+
+.Alert td {
+	padding: 5px;
+}
+
+.AlertClose a {
+	font-size: 20px;
+	padding: 1px 5px 1px 5px;
+	color: #CCC;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.AlertClose {
+	text-align: right;
+}
+
+.AlertClose a:hover {
+	color: #F30;
+}
+
+.AlertClose2 {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	background:url(/img/sm21.gif);
+	right: 5px;
+	top: 5px;
+}
